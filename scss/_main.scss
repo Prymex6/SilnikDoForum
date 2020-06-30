@@ -1,0 +1,44 @@
+.topics{
+    display:flex;
+    flex-direction: column;
+    width:90vw;
+    margin:0 auto;
+    .topics-header{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+        
+        .name-header{
+            text-align: left;
+            border:3px solid red;
+            flex-grow: 5;
+        }
+        .post-header{
+            flex-grow: 1;
+            border:3px solid red;
+        }
+        .last-header{
+            flex-grow:2;
+            border:3px solid red;
+        }
+    }
+    .simple-topic{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .name{
+            text-align: left;
+            border:3px solid red;
+            flex-grow: 5;
+        }
+        .post-count{
+            flex-grow: 1;
+            border:3px solid red;
+        }
+        .last-post{
+            flex-grow:2;
+            border:3px solid red;
+        }
+    }
+}
