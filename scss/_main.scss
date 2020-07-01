@@ -8,7 +8,9 @@
         flex-direction: row;
         justify-content: space-between;
         font-weight: bold;
-        
+        font-size:22px;
+        font-weight: bold;
+        height:40px;
         .name-header{
             text-align: left;
             border:3px solid red;
@@ -27,10 +29,14 @@
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        height:45px;
         .name{
             text-align: left;
             border:3px solid red;
             flex-grow: 5;
+            .topic{
+                font-size:18px;
+            }
         }
         .post-count{
             flex-grow: 1;
@@ -41,4 +47,9 @@
             border:3px solid red;
         }
     }
+}
+
+@media (min-width: 1200px){
+    
+
 }

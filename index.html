@@ -14,23 +14,32 @@
     <header class="website-header">
         <nav class="navigation">
             <ul class="menu">
-                <li>LOGO</li>
-                <li><a href="#">link1</a></li>
-                <li><a href="#">link2</a></li>
+                <li class="menu-item">LOGO</li>
+                <li class="menu-item"><a href="#">link1</a></li>
+                <li class="menu-item"><a href="#">link2</a></li>
+                <li class="menu-item"><a href="#">link3</a></li>
+                <li class="menu-item"><a href="#">link4</a></li>
             </ul>
         </nav>
         <div class="search">
-            <label>Search</label>
-            <input type="text" name="search-field" class="search-input" />
+            <label class="label-search" for="search">Search</label>
+            <input type="text" name="search-field" class="search-input" id="search"/>
+            <input type="button" name="search-button" class="search-button" value="Search"/>
         </div>
         <div class="login">
             <form method="POST">
-                <label>Email</label>
-                <input type="text" name="email" class="input" />
-                <label>Password</label>
-                <input type="password" name="password" class="input" />
+                <label class="label" for="email">Email:</label>
+                <input type="text" name="email" class="input" id="email"/>
+                <label class="label" for="password">Password:</label>
+                <input type="password" name="password" class="input" id="password" />
                 <input type="button" name="login" class="button" value="log in"/>
+                <div class="links">
+                    <a href="#" >Forgot password</a>
+                    <span class="vertical-line"></span>
+                    <a href="#">&nbspRegister</a>
+                </div>
             </form>
+            
         </div>
     </header>
     <main class="main-content">
@@ -41,7 +50,8 @@
                 <span class="last-header">Last Post</span>
             </div>
             <div class="simple-topic">
-                <span class="name">[Topic name] [author]</span>
+                <span class="name"><p class="topic">Przykładowa treść tematu na forum w celu sprawdzenia jak to działa</p>
+                <p class="author">Patryk Trela</p></span>
                 <span class="post-count">[Post count]</span>
                 <span class="last-post">
                     [when]
