@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="" />
-    <meta name= "description" name="opis" />
+    <meta name="description" name="opis" />
     <meta name="keywords" content="forum, silnik" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Forum</title>
 </head>
+
 <body>
     <header class="website-header">
         <nav class="navigation">
@@ -23,55 +25,77 @@
         </nav>
         <div class="search">
             <label class="label-search" for="search">Search</label>
-            <input type="text" name="search-field" class="search-input" id="search"/>
-            <input type="button" name="search-button" class="search-button" value="Search"/>
+            <input type="text" name="search-field" class="search-input" id="search" />
+            <input type="button" name="search-button" class="search-button" value="Search" />
         </div>
         <div class="login">
             <form method="POST">
                 <label class="label" for="email">Email:</label>
-                <input type="text" name="email" class="input" id="email"/>
+                <input type="text" name="email" class="input" id="email" />
                 <label class="label" for="password">Password:</label>
                 <input type="password" name="password" class="input" id="password" />
-                <input type="button" name="login" class="button" value="log in"/>
+                <input type="button" name="login" class="button" value="log in" />
                 <div class="links">
-                    <a href="#" >Forgot password</a>
+                    <a href="#">Forgot password</a>
                     <span class="vertical-line"></span>
                     <a href="#">&nbspRegister</a>
                 </div>
             </form>
-            
+
         </div>
     </header>
     <main class="main-content">
         <div class="topics">
             <div class="topics-header">
-                <span class="name-header">Topic</span>
-                <span class="post-header">Posts</span>
-                <span class="last-header">Last Post</span>
+                <div class="name-header">Topic</div>
+                <div class="post-header">Posts</div>
+                <div class="last-header">Last Post</div>
             </div>
             <div class="simple-topic">
-                <span class="name"><p class="topic">Przykładowa treść tematu na forum w celu sprawdzenia jak to działa</p>
-                <p class="author">Patryk Trela</p></span>
-                <span class="post-count">[Post count]</span>
-                <span class="last-post">
-                    [when]
-                    [author]
-                </span>
+                <div class="name">
+                    <div class="inside-name">
+                        <span class="topic">Przykładowa treść tematu na forum w celu sprawdzenia jak to
+                            działa</span>
+                        <span class="author">Patryk Trela</span>
+                    </div>
+                </div>
+                <div class="post-count">6</div>
+                <div class="last-post">
+                    <div class="inside-last">
+                        <span class="when"> 3 days ago</span>
+                        <span class="author">Mariusz Kowalski</span>
+                    </div>
+                </div>
             </div>
             <div class="simple-topic">
-                <span class="name">[Topic name] [author]</span>
-                <span class="post-count">[Post count]</span>
-                <span class="last-post">
-                    [when]
-                    [author]
-                </span>
+                <div class="name">
+                    <div class="inside-name">
+                        <span class="topic">Przykładowa treść tematu drugiego na forum by sprawdzić jak się to łamie
+                            (będzie trzeba wprowadzić ograniczenie ilości znaków w nagłówku tym)</span>
+                        <span class="author">Patryk Trela</span>
+                    </div>
+                </div>
+                <div class="post-count">1</div>
+                <div class="last-post">
+                    <div class="inside-last">
+                        <span class="when"> 3 month ago</span>
+                        <span class="author">Gabrysia6969</span>
+                    </div>
+                </div>
             </div>
             <div class="simple-topic">
-                <span class="name">[Topic name] [author]</span>
+                <div class="name">
+                    <div class="inside-name">
+                        <span class="topic">[Topic name]</span>
+                        <span class="author">[Author]</span>
+                    </div>
+                </div>
                 <span class="post-count">[Post count]</span>
                 <span class="last-post">
-                    [when]
-                    [author]
+                    <div class="inside-last">
+                        <span class="when"> [when]</span>
+                        <span class="author">[author]</span>
+                    </div>
                 </span>
             </div>
         </div>
@@ -80,4 +104,5 @@
         Nie mam pomysłu na to co mogłoby być w stopce
     </footer>
 </body>
+
 </html>
