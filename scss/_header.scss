@@ -16,8 +16,10 @@
 
 @media (min-width: 1200px){
     .website-header{
+        background-color:rgb(97, 97, 255);
+        padding: 0 5vw;
         .menu{
-            margin:20px 0 10px 5vw;
+            margin:10px 0 50px 5vw;
             font-size:27px;
             .menu-item{
                 padding-right:20px;
@@ -26,14 +28,31 @@
         }
 
         .search{
-            width:48vw;
+         width:60%;
             height:100px;
-            .search-input{
-                width:90%;
-                height:20px;
-                background-color:transparent;
-                border:1px solid black;
-                margin:10px 0;
+            .search-container{
+                position:relative;
+                .search-input{
+                    width:94%;
+                    height:60px;
+                    background-color:transparent;
+                    border:1px solid black;
+                    border-right:0;
+                    margin: 0;
+                    font-size:35px;
+                    padding:0 3%;
+                }
+
+                .search-button{
+                    position:absolute;
+                    top:0;
+                    left:100%;
+                    width:10%;
+                    height:100%;
+                    background-color:transparent;
+                    border:1px solid black;
+                    border-left:0;
+                }
             }
 
             .label-search{
@@ -46,7 +65,7 @@
         }
 
         .login{
-            width:48vw;
+            width:40%;;
             display: flex;
             flex-direction: row;
             flex-wrap:wrap;

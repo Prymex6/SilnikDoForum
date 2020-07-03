@@ -1,7 +1,7 @@
 body {
   background-color: silver;
   text-align: center;
-  padding: 2vh 5vw;
+  padding: 2vh 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -38,23 +38,43 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .website-header {
+    background-color: #6161ff;
+    padding: 0 5vw;
+  }
   .website-header .menu {
-    margin: 20px 0 10px 5vw;
+    margin: 10px 0 50px 5vw;
     font-size: 27px;
   }
   .website-header .menu .menu-item {
     padding-right: 20px;
   }
   .website-header .search {
-    width: 48vw;
+    width: 60%;
     height: 100px;
   }
-  .website-header .search .search-input {
-    width: 90%;
-    height: 20px;
+  .website-header .search .search-container {
+    position: relative;
+  }
+  .website-header .search .search-container .search-input {
+    width: 94%;
+    height: 60px;
     background-color: transparent;
     border: 1px solid black;
-    margin: 10px 0;
+    border-right: 0;
+    margin: 0;
+    font-size: 35px;
+    padding: 0 3%;
+  }
+  .website-header .search .search-container .search-button {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+    border-left: 0;
   }
   .website-header .search .label-search {
     font-size: 40px;
@@ -64,7 +84,7 @@ body {
     width: 100%;
   }
   .website-header .login {
-    width: 48vw;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,6 +121,7 @@ body {
           flex-direction: column;
   width: 90vw;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .topics .topics-header {
