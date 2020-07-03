@@ -5,6 +5,7 @@
     margin: 0 auto;
 
     .topics-header {
+        box-sizing: border-box;
         background-color: grey;
         width: 100%;
         font-weight: bold;
@@ -41,13 +42,19 @@
             width: 60%;
             height: 65px;
 
+
             .inside-name {
                 display: flex;
                 flex-direction: column;
 
                 .topic {
-                    font-size: 22px;
+                    font-size: 18px;
                     width: 100%;
+                    color: rgb(100, 100, 240);
+                }
+
+                .author {
+                    font-size: 14px;
                 }
             }
         }
@@ -68,7 +75,7 @@
                 flex-direction: column;
 
                 .when {
-                    font-size: 22px;
+                    font-size: 18px;
                     width: 100%;
                 }
 
@@ -79,8 +86,19 @@
         }
     }
 
-    .simple-topic:nth-child(even) {
+    .post-link {
+        color: black;
+    }
+
+
+    .post-link:nth-child(even) {
         background-color: rgb(206, 201, 201);
+
+    }
+
+    .post-link:nth-child(even):hover,
+    .post-link:hover {
+        background-color: rgb(175, 174, 174);
     }
 }
 

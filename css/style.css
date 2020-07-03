@@ -1,6 +1,8 @@
 body {
   background-color: silver;
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .website-header {
@@ -101,6 +103,8 @@ body {
 }
 
 .topics .topics-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: grey;
   width: 100%;
   font-weight: bold;
@@ -150,8 +154,13 @@ body {
 }
 
 .topics .simple-topic .name .inside-name .topic {
-  font-size: 22px;
+  font-size: 18px;
   width: 100%;
+  color: #6464f0;
+}
+
+.topics .simple-topic .name .inside-name .author {
+  font-size: 14px;
 }
 
 .topics .simple-topic .post-count {
@@ -177,7 +186,7 @@ body {
 }
 
 .topics .simple-topic .last-post .inside-last .when {
-  font-size: 22px;
+  font-size: 18px;
   width: 100%;
 }
 
@@ -185,7 +194,16 @@ body {
   font-size: 12px;
 }
 
-.topics .simple-topic:nth-child(even) {
+.topics .post-link {
+  color: black;
+}
+
+.topics .post-link:nth-child(even) {
   background-color: #cec9c9;
+}
+
+.topics .post-link:nth-child(even):hover,
+.topics .post-link:hover {
+  background-color: #afaeae;
 }
 /*# sourceMappingURL=style.css.map */
