@@ -2,6 +2,8 @@ body {
   background-color: silver;
   text-align: center;
   padding: 2vh 5vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .website-header {
@@ -102,81 +104,107 @@ body {
 }
 
 .topics .topics-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: grey;
+  width: 100%;
   font-weight: bold;
   font-size: 22px;
   font-weight: bold;
   height: 40px;
+  padding: 8px;
 }
 
 .topics .topics-header .name-header {
+  display: inline-block;
   text-align: left;
-  border: 3px solid red;
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5;
+  width: 60%;
 }
 
 .topics .topics-header .post-header {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border: 3px solid red;
+  display: inline-block;
+  width: 20%;
 }
 
 .topics .topics-header .last-header {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  border: 3px solid red;
+  display: inline-block;
+  width: 19%;
 }
 
 .topics .simple-topic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 45px;
+  width: 100%;
+  height: 65px;
+  padding: 10px 5px;
 }
 
 .topics .simple-topic .name {
+  display: inline-block;
   text-align: left;
-  border: 3px solid red;
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5;
+  width: 60%;
+  height: 65px;
 }
 
-.topics .simple-topic .name .topic {
+.topics .simple-topic .name .inside-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.topics .simple-topic .name .inside-name .topic {
   font-size: 18px;
+  width: 100%;
+  color: #6464f0;
+}
+
+.topics .simple-topic .name .inside-name .author {
+  font-size: 14px;
 }
 
 .topics .simple-topic .post-count {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border: 3px solid red;
+  display: inline-block;
+  width: 20%;
+  height: 65px;
 }
 
 .topics .simple-topic .last-post {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  border: 3px solid red;
+  display: inline-block;
+  width: 19%;
+  height: 65px;
+}
+
+.topics .simple-topic .last-post .inside-last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.topics .simple-topic .last-post .inside-last .when {
+  font-size: 18px;
+  width: 100%;
+}
+
+.topics .simple-topic .last-post .inside-last .author {
+  font-size: 12px;
+}
+
+.topics .post-link {
+  color: black;
+}
+
+.topics .post-link:nth-child(even) {
+  background-color: #cec9c9;
+}
+
+.topics .post-link:nth-child(even):hover,
+.topics .post-link:hover {
+  background-color: #afaeae;
 }
 /*# sourceMappingURL=style.css.map */
