@@ -1,12 +1,13 @@
-.website-header{
+.website-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    .navigation{    
-        width:100vw;
 
-        .menu{
-            display:flex;
+    .navigation {
+        width: 100vw;
+
+        .menu {
+            display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: flex-start;
@@ -14,80 +15,102 @@
     }
 }
 
-@media (min-width: 1200px){
-    .website-header{
-        background-color:rgb(97, 97, 255);
+@media (min-width: 100px) {
+    .website-header {
+        background-color: rgb(97, 97, 255);
         padding: 0 5vw;
-        .menu{
-            margin:10px 0 50px 5vw;
-            font-size:27px;
-            .menu-item{
-                padding-right:20px;
 
+        .menu {
+            margin: 20px 0 50px 5vw;
+            font-size: 24px;
+
+            .menu-item {
+                padding-right: 20px;
+            }
+
+            .categories-more {
+                position: absolute;
+                background-color: rgb(97, 97, 255);
+                ;
+                padding: 2px;
+                z-index: 1;
+            }
+
+            .hidden {
+                display: none;
             }
         }
 
-        .search{
-         width:60%;
-            height:100px;
-            .search-container{
-                position:relative;
-                .search-input{
-                    width:94%;
-                    height:60px;
-                    background-color:transparent;
-                    border:1px solid black;
-                    border-right:0;
+        .search {
+            width: 60%;
+            height: 150px;
+            margin: 0 auto;
+
+            .search-container {
+                position: relative;
+                margin-top: 5px;
+
+                .search-input {
+                    width: 94%;
+                    height: 60px;
+                    background-color: transparent;
+                    border: 1px solid black;
+                    border-right: 0;
                     margin: 0;
-                    font-size:35px;
-                    padding:0 3%;
+                    font-size: 35px;
+                    padding: 0 3%;
                 }
 
-                .search-button{
-                    position:absolute;
-                    top:0;
-                    left:100%;
-                    width:10%;
-                    height:100%;
-                    background-color:transparent;
-                    border:1px solid black;
-                    border-left:0;
+                .search-button {
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    width: 10%;
+                    height: calc(100% - 2px);
+                    background-color: transparent;
+                    border: 1px solid black;
+                    border-left: 0;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
 
-            .label-search{
-                font-size:40px;
+            .label-search {
+                font-size: 40px;
                 font-weight: bold;
-                color:blue;
-                display:block;
-                width:100%;           
+                color: blue;
+                display: block;
+                width: 100%;
             }
         }
 
-        .login{
-            width:40%;;
+        .login {
+            width: 40%;
+            ;
             display: flex;
             flex-direction: row;
-            flex-wrap:wrap;
-            justify-content:space-around;
-            height:150px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 150px;
 
-            .input{
-                display:block;
+            .input {
+                display: block;
                 margin-bottom: 10px;
             }
 
-            .label{
-                display:block;
-                width:100%;
+            .label {
+                display: block;
+                width: 100%;
             }
 
-            .links{
+            .links {
 
-                .vertical-line{
-                    border:1px solid white;
+                .vertical-line {
+                    border: 1px solid white;
                 }
             }
-        }  
+        }
     }
 }

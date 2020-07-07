@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 90vw;
     margin: 0 auto;
-    padding-top:40px;
+    padding-top: 40px;
 
     .topics-header {
         box-sizing: border-box;
@@ -13,7 +13,7 @@
         font-size: 22px;
         font-weight: bold;
         height: 40px;
-        padding: 8px;
+        padding: 8px 0;
 
         .name-header {
             display: inline-block;
@@ -23,12 +23,12 @@
 
         .post-header {
             display: inline-block;
-            width: 20%;
+            width: 19%;
         }
 
         .last-header {
             display: inline-block;
-            width: 19%;
+            width: 15%;
         }
     }
 
@@ -56,6 +56,7 @@
 
                 .author {
                     font-size: 14px;
+                    padding: 2px 0;
                 }
             }
         }
@@ -68,7 +69,7 @@
 
         .last-post {
             display: inline-block;
-            width: 19%;
+            width: 15%;
             height: 65px;
 
             .inside-last {
