@@ -1,5 +1,5 @@
 body {
-  background-color: silver;
+  background-color: #20578b;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -38,7 +38,7 @@ body {
 
 @media (min-width: 100px) {
   .website-header {
-    background-color: #6161ff;
+    background-color: #2a71b4;
     padding: 0 5vw;
   }
   .website-header .menu {
@@ -50,9 +50,10 @@ body {
   }
   .website-header .menu .categories-more {
     position: absolute;
-    background-color: #6161ff;
-    padding: 2px;
+    background-color: #2a71b4;
+    padding: 4px;
     z-index: 1;
+    border: 1px solid #173d61;
   }
   .website-header .menu .hidden {
     display: none;
@@ -74,27 +75,34 @@ body {
     border-right: 0;
     margin: 0;
     font-size: 35px;
-    padding: 0 3%;
+    padding: 0 3% 0 2%;
+    z-index: 1;
   }
   .website-header .search .search-container .search-button {
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 99%;
     width: 10%;
-    height: calc(100% - 2px);
+    height: 100%;
     background-color: transparent;
     border: 1px solid black;
     border-left: 0;
+    font-size: 20px;
+    font-weight: bold;
   }
   .website-header .search .search-container .search-button:hover {
     cursor: pointer;
   }
-  .website-header .search .label-search {
-    font-size: 40px;
-    font-weight: bold;
-    color: blue;
-    display: block;
-    width: 100%;
+  .website-header .search .search-container .text-inside {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 2%;
+    font-size: 35px;
+    color: #173d61;
+    letter-spacing: 2px;
+    z-index: 0;
   }
   .website-header .login {
     width: 40%;
@@ -133,14 +141,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90vw;
-  margin: 0 auto;
-  padding-top: 40px;
+  margin: 40px auto;
+  min-height: 600px;
 }
 
 .topics .topics-header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: grey;
+  background-color: #0d2338;
   width: 100%;
   font-weight: bold;
   font-size: 22px;
@@ -189,9 +197,10 @@ body {
 }
 
 .topics .simple-topic .name .inside-name .topic {
-  font-size: 18px;
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
   width: 100%;
-  color: #6464f0;
 }
 
 .topics .simple-topic .name .inside-name .author {
@@ -235,11 +244,28 @@ body {
 }
 
 .topics .post-link:nth-child(even) {
-  background-color: #cec9c9;
+  background-color: #2f7ec9;
 }
 
-.topics .post-link:nth-child(even):hover,
+.topics .post-link:nth-child(odd) {
+  background-color: #68a4dc;
+}
+
 .topics .post-link:hover {
-  background-color: #afaeae;
+  background-color: #2a6cb4;
+}
+
+.main-header {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  width: 90vw;
+  text-align: left;
+  margin: 40px auto;
+}
+
+.website-footer {
+  border-top: 3px solid #12304d;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

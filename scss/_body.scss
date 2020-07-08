@@ -1,5 +1,5 @@
 body {
-    background-color: silver;
+    background-color: darken($color: $my-background-color, $amount: 10);
     text-align: center;
     box-sizing: border-box;
 }

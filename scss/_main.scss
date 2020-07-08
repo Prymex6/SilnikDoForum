@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    margin: 0 auto;
-    padding-top: 40px;
+    margin: 40px auto;
+    min-height: 600px;
 
     .topics-header {
         box-sizing: border-box;
-        background-color: grey;
+        background-color: darken($color: $my-background-color, $amount: 30);
         width: 100%;
         font-weight: bold;
         font-size: 22px;
@@ -49,9 +49,11 @@
                 flex-direction: column;
 
                 .topic {
-                    font-size: 18px;
+                    font-size: 19px;
+                    font-weight: bold;
+                    color: darken($color: $my-background-color, $amount: 45);
                     width: 100%;
-                    color: rgb(100, 100, 240);
+
                 }
 
                 .author {
@@ -94,14 +96,25 @@
 
 
     .post-link:nth-child(even) {
-        background-color: rgb(206, 201, 201);
-
+        background-color: lighten($color: $my-background-color, $amount: 5);
     }
 
-    .post-link:nth-child(even):hover,
+    .post-link:nth-child(odd) {
+        background-color: lighten($color: $my-background-color, $amount: 20);
+    }
+
     .post-link:hover {
-        background-color: rgb(175, 174, 174);
+        background-color: adjust-hue($my-background-color, 2%);
     }
+}
+
+.main-header {
+    font-size: 35px;
+    font-weight: bold;
+    color: darken($color: $my-background-color, $amount: 60);
+    width: 90vw;
+    text-align: left;
+    margin: 40px auto;
 }
 
 @media (min-width: 1200px) {}
