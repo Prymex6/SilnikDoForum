@@ -91,6 +91,7 @@
                     color: darken($color: $my-background-color, $amount: 20);
                     letter-spacing: 2px;
                     z-index: 0;
+                    pointer-events: none;
                 }
 
             }
