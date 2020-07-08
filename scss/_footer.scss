@@ -1,4 +1,8 @@
 .website-footer {
     border-top: 3px solid darken($color: $my-background-color, $amount: 25);
     padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }

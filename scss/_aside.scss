@@ -1,0 +1,8 @@
+.aside-content {
+    background-color: darken($color: $my-background-color, $amount: 15);
+    margin: 40px 0;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

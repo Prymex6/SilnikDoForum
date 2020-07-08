@@ -2,4 +2,8 @@ body {
     background-color: darken($color: $my-background-color, $amount: 10);
     text-align: center;
     box-sizing: border-box;
+    display: grid;
+
+    grid-template-columns: 2vw 60vw 3vw 32vw 2vw;
+    grid-template-rows: 300px minman0(600px, 1fr) 300px;
 }

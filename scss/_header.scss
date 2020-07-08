@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 
     .navigation {
-        width: 100vw;
+        width: 100%;
 
         .menu {
             display: flex;
@@ -18,7 +18,10 @@
 @media (min-width: 100px) {
     .website-header {
         background-color: $my-background-color;
-        padding: 0 5vw;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
 
         .menu {
             margin: 20px 0 50px 5vw;
